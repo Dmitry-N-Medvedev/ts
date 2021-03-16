@@ -1,3 +1,6 @@
+import {
+  PersonType,
+} from './libEnums';
 export interface Person {
   firstName: string;
   lastName: string;
@@ -15,4 +18,8 @@ export async function asyncGreet(person: Person) {
       resolve(`hi, ${person.firstName} ${person.lastName}`);
     }, 250);
   });
+}
+
+export function greetPersonType(person: Person, personType: PersonType): string {
+  return personType === PersonType.CORPORATE ? `good day, Mr. ${person.lastName}` : `hi, ${person.firstName}`;
 }

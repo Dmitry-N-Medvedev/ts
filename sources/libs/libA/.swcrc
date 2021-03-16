@@ -1,8 +1,25 @@
 {
   "env": {
     "targets": {
-      "node": "15.11.0",
+      "node": "15",
       "chrome": "89"
     }
-  }
+  },
+  "test": ".*.ts$",
+  "exclude": [
+    ".*.spec.*$"
+  ],
+  "jsc": {
+    "externalHelpers": true,
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "dynamicImport": true,
+      "decorators": false
+    },
+    "transform": null,
+    "target": "es2020",
+    "loose": true
+  },
+  "minify": false
 }

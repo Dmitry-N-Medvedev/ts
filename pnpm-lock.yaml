@@ -1,4 +1,6 @@
 importers:
+  .:
+    specifiers: {}
   sources/libs/libA:
     devDependencies:
       '@swc-node/core': 1.3.0
