@@ -1,0 +1,30 @@
+{
+  "name": "@dmitry-n-medvedev/ts",
+  "version": "0.0.0",
+  "description": "evaluating typescript",
+  "engines": {
+    "node": "=15.11.0",
+    "pnpm": "=5.18.7"
+  },
+  "engineStrict": true,
+  "volta": {
+    "node": "15.11.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitry-N-Medvedev/ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "swc"
+  ],
+  "author": "Dmitry N. Medvedev <dmitry.medvedev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dmitry-N-Medvedev/ts/issues"
+  },
+  "homepage": "https://github.com/Dmitry-N-Medvedev/ts#readme"
+}
